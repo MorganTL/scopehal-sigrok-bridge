@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.3)
 project(scopehal-sigrok-bridge)
 
-set(WARNINGS "-Wall -Wextra -Wuninitialized ")
-set(WARNINGS "${WARNINGS} -Wshadow -Wunsafe-loop-optimizations -Wpedantic -Wcast-align -Wwrite-strings")
-set(WARNINGS "${WARNINGS} -Wvla")
+# set(WARNINGS "-Wall -Wextra -Wuninitialized ")
+# set(WARNINGS "${WARNINGS} -Wshadow -Wunsafe-loop-optimizations -Wpedantic -Wcast-align -Wwrite-strings")
+# set(WARNINGS "${WARNINGS} -Wvla")
 set(CMAKE_CXX_FLAGS "-g -fopenmp ${WARNINGS} --std=c++17 -mtune=native -ffast-math")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 set(CMAKE_CXX_FLAGS_DEBUG "-O0 -fsanitize=address")
